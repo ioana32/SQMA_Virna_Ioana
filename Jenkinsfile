@@ -13,7 +13,7 @@ pipeline {
          stage('Run Tests') {
             steps {
                 script {
-                    bat 'C:\Python\Python313\python.exe -m unittest discover tests'
+                    bat 'C:\\Python\\Python313\\python.exe -m unittest discover tests'
                     } 
                 }
             }
