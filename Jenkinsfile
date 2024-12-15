@@ -1,8 +1,5 @@
 pipeline {
     agent any 
-    environment {
-        TEST_TO_RUN = 'ALL' 
-    }
     stages {
         stage('Checkout') {
             steps {
