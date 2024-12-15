@@ -9,6 +9,15 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/ioana32/SQMA_Virna_Ioana.git'
             }
         }
+
+         stage('Run Tests') {
+            steps {
+                script {
+                    bat 'python -m unittest discover tests'
+                    } 
+                }
+            }
+        
     }
     post {
         always {
