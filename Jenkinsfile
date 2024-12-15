@@ -18,7 +18,6 @@ pipeline {
     }
     post {
         always {
-            // Curățăm workspace-ul Jenkins după fiecare rulare
             cleanWs()
         }
     }
