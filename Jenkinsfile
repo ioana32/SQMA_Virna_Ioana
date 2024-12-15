@@ -5,7 +5,9 @@ pipeline {
     }
     stages {
         stage('Checkout') {
-                steps git branch: 'main', url: 'https://github.com/ioana32/SQMA_Virna_Ioana.git'
+            steps {
+                git branch: 'main', url: 'https://github.com/ioana32/SQMA_Virna_Ioana.git'
+            }
         }
         
         stage('Run Tests') {
